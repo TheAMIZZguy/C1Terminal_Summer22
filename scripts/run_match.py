@@ -53,7 +53,9 @@ else:
         trailing_char = "" if algo2.endswith('/') else "/"
         algo2 = algo2 + trailing_char + "run.sh"
 
+print("\n\n\n")
 print("Algo 1: ", algo1)
-print("Algo 2:", algo2)
+print("Algo 2: ", algo2)
+print("\n\n\n")
 
 run_single_game("cd {} && java -jar engine.jar work {} {}".format(parent_dir, algo1, algo2))

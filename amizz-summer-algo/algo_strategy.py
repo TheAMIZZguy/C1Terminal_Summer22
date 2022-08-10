@@ -68,12 +68,7 @@ class AlgoStrategy(gamelib.AlgoCore):
     """
 
     def starter_strategy(self, game_state):
-        """
-        For defense we will use a spread out layout and some interceptors early on.
-        We will place turrets near locations the opponent managed to score on.
-        For offense we will use long range demolishers if they place stationary units near the enemy's front.
-        If there are no stationary units to attack in the front, we will send Scouts to try and score quickly.
-        """
+
         # First, place basic defenses
         self.build_defences(game_state)
         # Now build reactive defenses based on where the enemy scored
