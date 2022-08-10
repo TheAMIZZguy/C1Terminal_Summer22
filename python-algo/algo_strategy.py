@@ -43,6 +43,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         SP = 0
         # This is a good place to do initial setup
         self.scored_on_locations = []
+        
 
     def on_turn(self, turn_state):
         """
